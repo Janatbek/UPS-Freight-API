@@ -1,9 +1,9 @@
 <?php
 
   //Configuration
-$access = "9D193CF3301349FF";
-$userid = "command";
-$passwd = "#Pack3840";
+$access = "";
+$userid = "";
+$passwd = "";
 $wsdl = "../../../SCHEMA-WSDLs/FreightRate.wsdl";
 $operation = "ProcessFreightRate";
 $endpointurl = 'https://wwwcie.ups.com/webservices/FreightRate';
@@ -145,15 +145,6 @@ try
     echo "<br>";
     echo $resp->TotalShipmentCharge->MonetaryValue;
 
-
-
-
-//  $fileName = 'response.json';
-//  $handle = fopen($fileName, 'w');
-//  $result = fwrite($handle, "\xEF\xBB\xBF");
-//  $result = fwrite($handle, $resp);
-//  fclose($handle);
-// die();
  // echo gettype($resp->Response), "\n";
 
  //get status
